@@ -38,6 +38,8 @@ Extensions = [
               ".txt",
               ".html",
               ]
+
+# These will be the new dirs in which the files will be organized
 DirNames = ["IMAGES", 
             "PDF", 
             "WORD", 
@@ -54,6 +56,5 @@ DirNames = ["IMAGES",
 
 Dir = r"C:/Users/HP/Downloads/"
 Files = os.listdir(r"C:/Users/HP/Downloads")
-
 Create_Dirs_If_Neccesary(Dir, DirNames)
 Order_Files_In_Dir(Files, Dir, DirNames, Extensions)
